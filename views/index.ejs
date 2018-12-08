@@ -14,8 +14,32 @@ List Of Categories
   <% } %>
   </ul>
 
+  List Of SubCategories
+  <ul class="subcategories">
+  <% for(var j=0; j<subcategories.length; j++) {%>
+    <li class="subcategories">
+     <span><%= subcategories[j].category %></span>
+      <span><%= subcategories[j].subcategory %></span>
+    </li>
+  <% } %>
+  </ul>
+
   <form action="/addCategories" method="POST">
     <input type="text" placeholder="Category Name" name="category">
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <form action="/addSubCategories" method="POST">
+            <li class="categories">
+                Select One Category
+                    <select name="category">
+                            <% for(var i=0; i<categories.length; i++) {%>
+                            <option value=<%= categories[i].category %>><%= categories[i].category %></option>
+                            <% } %>
+                        </select>
+            </li>
+    <input type="text" placeholder="Subcategory Name" name="subcategory">
     <button type="submit">Submit</button>
   </form>
 </body>
