@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const MongoClient = require("mongodb").MongoClient;
 var RSVP = require("rsvp");
+var creds = require("./creds");
 var database;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -77,7 +78,7 @@ app.post("/addSubCategories", (req, res) => {
 });
 
 MongoClient.connect(
-  "mongodb://anmol92verma:dUAf73QCmAXqicb@ds227674.mlab.com:27674/mladsdk",
+  creds.DB_URL(),
   (err, client) => {
     if (err) return console.log(err);
     database = client.db("mladsdk"); // whatever your database name is
