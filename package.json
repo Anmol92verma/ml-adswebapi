@@ -1,0 +1,28 @@
+{
+  "name": "webapi",
+  "version": "1.0.0",
+  "description": "a web api for the ad's sdk for machine learning on data collected through a client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anmol92verma/ml-adswebapi.git"
+  },
+  "keywords": [
+    "node.js",
+    "machinelearning",
+    "machine",
+    "learning"
+  ],
+  "author": "Anmol Verma",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Anmol92verma/ml-adswebapi/issues"
+  },
+  "homepage": "https://github.com/Anmol92verma/ml-adswebapi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
