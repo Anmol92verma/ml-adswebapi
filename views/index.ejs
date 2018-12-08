@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Categories</title>
+</head>
+<body>
+List Of Categories
+  <ul class="categories">
+  <% for(var i=0; i<categories.length; i++) {%>
+    <li class="categories">
+      <span><%= categories[i].category %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/addCategories" method="POST">
+    <input type="text" placeholder="Category Name" name="category">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

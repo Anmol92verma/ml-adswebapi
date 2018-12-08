@@ -4,6 +4,7 @@
   "description": "a web api for the ad's sdk for machine learning on data collected through a client",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,12 @@
   },
   "homepage": "https://github.com/Anmol92verma/ml-adswebapi#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
   }
 }
