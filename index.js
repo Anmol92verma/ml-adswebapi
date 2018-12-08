@@ -50,10 +50,10 @@ function getSubcategories() {
 
 app.get("/", (req, res) => {
   getCategories()
-    .then(function(categories) {
+    .then(function() {
       return getSubcategories();
     })
-    .then(function(subcategories) {
+    .then(function() {
       res.render("index.ejs", {
         categories: categories,
         subcategories: subcategories
